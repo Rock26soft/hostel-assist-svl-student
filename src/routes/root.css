@@ -3,7 +3,7 @@
 @plugin '@tailwindcss/typography';
 
 :root {
-    font-family: "outfit", "Roboto Light", "Helvetica", "Arial", sans-serif;
+    font-family: "Outfit", "Roboto Light", "Helvetica", "Arial", sans-serif;
     --title-font-size: 1.5rem !important;
     --description-font-size: 0.9rem !important;
     --background: white;
@@ -20,7 +20,7 @@ body {
 .mobile {
     height: 100vh;
     overflow: hidden;
-    width: min(calc(100vh * 9 / 16), 100%);
+    width: min(calc(100vh * 9 / 16), 100vw);
     background-color: var(--background);
 }
 

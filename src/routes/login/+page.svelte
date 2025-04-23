@@ -2,7 +2,7 @@
 	import "../root.css"
 	import "../../app.css"
 	import { blur } from 'svelte/transition';
-	import { Button, GradientButton } from 'flowbite-svelte';
+	import { Button } from 'flowbite-svelte';
 	import { Toast } from 'flowbite-svelte';
 	import { ExclamationCircleOutline } from 'flowbite-svelte-icons';
 	//check login status else
@@ -11,14 +11,6 @@
     .logo-small {
         height: auto;
         width: 120px;
-
-        @media (min-width: 640px) {
-            width: 160px;
-        }
-
-        @media (min-width: 1024px) {
-            width: 170px;
-        }
 				margin: 10px;
     }
 		.top-bar{

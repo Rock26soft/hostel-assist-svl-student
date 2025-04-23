@@ -1,12 +1,7 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 @tailwind utilities;
-@font-face {
-	font-family: 'outfit';
-	src: url('../fonts/outfit_semibold.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
+
 :root {
 	--purple-200: #faf2e5;
 	--purple-500: #6200ee;
