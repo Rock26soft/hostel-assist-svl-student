@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@tailwind utilities;
+@font-face {
+	font-family: 'outfit';
+	src: url('../fonts/outfit_semibold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+:root {
+	--purple-200: #faf2e5;
+	--purple-500: #6200ee;
+	--purple-700: #3700b3;
+	--teal-200: #03dac5;
+	--teal-700: #018786;
+	--black: #000000;
+	--white: #ffffff;
+
+	--primary: #2a295e;
+	--secondary: #7b3972;
+}
+
+@plugin 'flowbite/plugin';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-primary-50: #f0f0f7;
+	--color-primary-100: #d9d8ea;
+	--color-primary-200: #b4b2d6;
+	--color-primary-300: #8f8bc3;
+	--color-primary-400: #6b65b0;
+	--color-primary-500: #2a295e;
+	--color-primary-600: #23224e;
+	--color-primary-700: #2a295e;
+	--color-primary-800: #2a295e;
+	--color-primary-900: #2a295e;
+}
+
+@layer base {
+	button, [role="button"] {
+		cursor: pointer;
+	}
+}
+@source "../node_modules/flowbite-svelte/dist";

@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+:root {
+    font-family: "outfit", "Roboto Light", "Helvetica", "Arial", sans-serif;
+    --title-font-size: 1.5rem !important;
+    --description-font-size: 0.9rem !important;
+    --background: white;
+    --description-font-color: rgb(81, 81, 81);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.mobile {
+    height: 100vh;
+    overflow: hidden;
+    width: min(calc(100vh * 9 / 16), 100%);
+    background-color: var(--background);
+}
+
+.splash_shadow {
+    box-shadow: 0 0px 15px 0 rgb(189, 189, 253);
+    border-radius: 100%;
+    animation: splash 0.3s linear;
+}
+
+.splash_container {
+    animation: breath 2s linear infinite;
+}
+
+p {
+
+}
+
+@keyframes splash {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes breath {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.04;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.title {
+    animation: splash 0.3s linear;
+    font-size: var(--title-font-size);
+    font-family: "outfit", "Roboto Light", "Helvetica", "Arial", sans-serif;
+}
+
+.description {
+    transform: translateY(100px);
+    font-size: var(--description-font-size);
+    color: var(--description-font-color);
+}
